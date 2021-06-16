@@ -2,6 +2,7 @@ package tests;
 
 import config.DeviceHost;
 import io.appium.java_client.MobileBy;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +17,7 @@ public class
 WikiSearchTest extends TestBase {
 
     @Test
+    @Disabled
     @DisplayName("Successful search in wikipedia android app")
     void searchTest() {
         if(!deviceHost().equals(DeviceHost.BROWSER_STACK)){
